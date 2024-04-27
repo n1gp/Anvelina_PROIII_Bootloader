@@ -1,0 +1,85 @@
+IP Upgrade report for Bootloader
+Sat Nov 21 16:12:21 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sat Nov 21 16:12:21 2020           ;
+; Quartus Prime Version        ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                ; Bootloader                                  ;
+; Top-level Entity Name        ; Bootloader                                  ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                ;
++-------------+------------------+---------+----------------------+----------------------+-----------------+---------+
+; Entity Name ; Component Name   ; Version ; Original Source File ; Generation File Path ; New Source File ; Message ;
++-------------+------------------+---------+----------------------+----------------------+-----------------+---------+
+; ASMI        ; ALTASMI_PARALLEL ; 11.1    ; ASMI.qip             ; ASMI.v               ; ASMI.qip        ;         ;
+; Remote      ; ALTREMOTE_UPDATE ; 11.1    ; Remote.qip           ; Remote.v             ; Remote.qip      ;         ;
+; PHY_fifo    ; FIFO             ; 11.1    ; PHY_fifo.qip         ; PHY_fifo.v           ; PHY_fifo.qip    ;         ;
+; PLL_clocks  ; ALTPLL           ; 11.1    ; PLL_clocks.qip       ; PLL_clocks.v         ; PLL_clocks.qip  ;         ;
+; Rx_fifo     ; FIFO             ; 11.1    ; Rx_fifo.qip          ; Rx_fifo.v            ; Rx_fifo.qip     ;         ;
++-------------+------------------+---------+----------------------+----------------------+-----------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "ASMI.v" to "ASMI.BAK.v"
+Info (11837): Started upgrading IP component ALTASMI_PARALLEL with file "ASMI.v"
+Info (11902): Backing up file "Remote.v" to "Remote.BAK.v"
+Info (11837): Started upgrading IP component ALTREMOTE_UPDATE with file "Remote.v"
+Info (11902): Backing up file "PHY_fifo.v" to "PHY_fifo.BAK.v"
+Info (11837): Started upgrading IP component FIFO with file "PHY_fifo.v"
+Info (11902): Backing up file "PLL_clocks.v" to "PLL_clocks.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "PLL_clocks.v"
+Info (11902): Backing up file "Rx_fifo.v" to "Rx_fifo.BAK.v"
+Info (11837): Started upgrading IP component FIFO with file "Rx_fifo.v"
+Info (11131): Completed upgrading IP component ALTASMI_PARALLEL with file "ASMI.v"
+Info (11131): Completed upgrading IP component ALTREMOTE_UPDATE with file "Remote.v"
+Info (11131): Completed upgrading IP component FIFO with file "PHY_fifo.v"
+Info (11131): Completed upgrading IP component ALTPLL with file "PLL_clocks.v"
+Info (11131): Completed upgrading IP component FIFO with file "Rx_fifo.v"
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/19.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Sat Nov 21 16:12:21 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
+
+
