@@ -185,7 +185,7 @@ module Bootloader (
 			  STATUS_LED, PHY_TX,PHY_RX,PHY_DV,PHY_TX_CLOCK,PHY_TX_EN, NCONFIG, MODE1,
 			  PHY_RX_CLOCK,PHY_CLK125,PHY_MDIO,PHY_MDC, PHY_RESET_N, SCK, SI,CONFIG, NODE_ADDR_CS,
 			  DEBUG_LED1, DEBUG_LED2, DEBUG_LED3, DEBUG_LED4, DEBUG_LED5, DEBUG_LED6,
-			  DEBUG_LED7, DEBUG_LED8, DEBUG_LED9, DEBUG_LED10
+			  DEBUG_LED7, DEBUG_LED8, DEBUG_LED9, DEBUG_LED10, PTT_OFF1, PTT_OFF2
 			  );
 
 // PHY
@@ -227,6 +227,8 @@ output 	wire		DEBUG_LED7;
 output 	wire		DEBUG_LED8;
 output 	wire		DEBUG_LED9;
 output 	wire		DEBUG_LED10;
+output 	wire     PTT_OFF1;
+output 	wire     PTT_OFF2;
 
 
 //--------------------------------------------------------
