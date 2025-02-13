@@ -670,8 +670,9 @@ case (state)
 		write_enable <= 0;
 		sector_erase <= 0;
 		if (busy) state <= 2;
-		else if (address != 24'h300000) begin //h1F0000) begin	// reached end of memory yet?
-			address <= address + 24'h040000; //h010000;	// increment address to next sector
+		// The EPCS128 has 16MB of memory, we'll erase the 1st half
+		else if (address != 24'h400000) begin	// reached end of memory yet?
+			address <= address + 24'h040000; //h010000 for EPCQ128, increment address to next sector
 			state <= 1;
 		end 		
 		else state <= 3;						// erase done, let user know
